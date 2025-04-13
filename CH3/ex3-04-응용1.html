@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>인라인 시맨틱 태그</title>
+        <script>
+            var progress;
+            var max;
+            var span;
+            function start() {
+                span = document.getElementById("span");
+                progress = document.getElementById("prog");
+                max = progress.max;
+
+                setInterval("fill()", 400);
+            }
+
+            function fill() {
+                var value = progress.value;
+                value += 1;
+                value %= (max + 1);
+                progress.value = value;
+                span.innerHTML = value*10;
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <h3>인라인 시맨틱 태그 사례</h3>
+        <hr>
+        <p>내일 <mark>HTML5 시험</mark><br>
+        시간은 <time>09:00</time><br>
+        난이도 <meter value="0.8">80%</meter><br>
+        자료 업로딩(<span id="span">20</span>%)
+        <progress id="prog" value="2" max="10"></progress><br>
+        </p>
+    </body>
+</html>

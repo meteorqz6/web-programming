@@ -1,0 +1,24 @@
+<!-- 링크의 target 속성 활용 -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>링크의 target 속성 활용</title>
+    </head>
+    <body>
+        <h3>링크의 target 속성 활용</h3>
+        <hr>
+        <ul>
+            <li><a href="http://www.w3.org" target="_blank">W3C(새 윈도우, _blank)</a>
+            <li><a href="http://www.w3.org" target="_self">W3C(현재 윈도우, _self)</a>
+            <li><a href="http://www.w3.org" target="_parent">W3C(부모 윈도우, _parent)</a>
+            <li><a href="http://www.w3.org" target="_top">W3C(브라우저 윈도우, _top)</a>
+        </ul>
+    </body>
+ </html>
+
+ <!-- _blank: 새 창이나 새 탭에서 열린다
+ _self: 현재 창에서 열린다
+ _parent: 부모 프레임에서 열린다
+ _top: 최상위 전체 창에서 열린다
+ 프레임이나 iframe을 사용 중일 때만 _parent나 _top이 실제로 효과가 있다. -->

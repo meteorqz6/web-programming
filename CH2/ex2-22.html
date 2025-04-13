@@ -1,0 +1,17 @@
+<!-- 2개의 인라인 프레임을 가진 웹 페이지 -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h3>2 개의 &lt;iframe&gt;을 가집니다.</h3>
+        <hr>
+        <iframe src="iframe1.html" width="200" height="150">    
+        </iframe>
+        <iframe src="iframe2.html" width="200" height="100" srcdoc="<html><head></head><body>hello</body></html>">    
+        </iframe>
+    </body>
+ </html>
+
+ <!-- srcdoc 속성이 있으면 src 속성은 무시된다. -->
